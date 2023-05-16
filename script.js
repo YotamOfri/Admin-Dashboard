@@ -69,7 +69,13 @@ function addBook() {
     card_btns.classList.add("card-btns");
     let checkbox = document.createElement("button");
     checkbox.classList.add("haveread-card");
-    checkbox.innerText = "Read";
+    if (book.checkbox === "on") {
+      checkbox.style.borderColor = "red";
+      checkbox.style.color = "red";
+      checkbox.innerText = "Not Read";
+    } else {
+      checkbox.innerText = "Read";
+    }
     let remove = document.createElement("button");
     remove.classList.add("remove-card");
     remove.addEventListener("click", () => {
@@ -77,6 +83,17 @@ function addBook() {
       while (card_container.firstElementChild)
         card_container.firstElementChild.remove();
       addBook();
+    });
+    checkbox.addEventListener("click", () => {
+      if (checkbox.innerText == "Read") {
+        checkbox.style.borderColor = "red";
+        checkbox.style.color = "red";
+        checkbox.innerText = "Not read";
+      } else if (checkbox.innerText === "Not read") {
+        checkbox.style.borderColor = "#9eff84";
+        checkbox.style.color = "#9eff84";
+        checkbox.innerText = "Read";
+      }
     });
     remove.innerText = "Remove";
     card_btns.appendChild(checkbox);
