@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+    <title>Admin</title>
+  </head>
+  <body>
+    <!-- Add Page Hidden -->
+    <div class="add-page-container">
+      <div class="add-page">
+        <h1>Add New Book</h1>
+        <form class="add-page-form">
+          <div class="input-container">
+            <input type="text" id="title" required maxlength="100" />
+            <label for="title">Title</label>
+          </div>
+          <div class="input-container">
+            <input type="text" id="author" required maxlength="100" />
+            <label for="author">Author</label>
+          </div>
+          <div class="input-container">
+            <input type="number" id="pages" required maxlength="10000" />
+            <label for="pages">Pages</label>
+            <div class="numbers-form-style">
+              <button type="button" class="increase">▲</button>
+              <button type="button" class="decrease">▼</button>
+            </div>
+          </div>
+          <div class="checkbox-container">
+            <input type="checkbox" id="checkbox" />
+            <label for="checkbox">Have you read it?</label>
+          </div>
+          <input type="submit" value="Submit" id="submit" />
+        </form>
+      </div>
+    </div>
+    <section class="sidebar-contianer">
+      <div class="topside">
+        <div class="header">
+          <button><i class="bx bx-menu"></i><span>Dashboard</span></button>
+        </div>
+        <!-- first link -->
+        <ul>
+          <li>
+            <div class="sidebar-li">
+              <a href="#"><i class="bx bxs-home"></i><span>Home</span></a>
+            </div>
+          </li>
+          <li>
+            <div class="sidebar-li">
+              <a href="#"
+                ><i class="bx bxs-user-account"></i><span>Profile</span></a
+              >
+            </div>
+          </li>
+          <li>
+            <div class="sidebar-li">
+              <a href="#"><i class="bx bxs-chat"></i><span>Messages</span></a>
+            </div>
+          </li>
+          <li>
+            <div class="sidebar-li">
+              <a href="#"><i class="bx bx-history"></i><span>History</span></a>
+            </div>
+          </li>
+          <li>
+            <div class="sidebar-li">
+              <a href="#"><i class="bx bx-file-blank"></i><span>Tasks</span></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- second links -->
+      <ul class="bot-ul">
+        <li>
+          <div class="sidebar-li">
+            <a href="#"><i class="bx bxs-cog"></i><span>Settings</span></a>
+          </div>
+        </li>
+        <li>
+          <div class="sidebar-li">
+            <a href="#"><i class="bx bx-support"></i><span>Support</span></a>
+          </div>
+        </li>
+        <li>
+          <div class="sidebar-li">
+            <a href="#"
+              ><i class="bx bxs-check-shield"></i><span>Privacy</span></a
+            >
+          </div>
+        </li>
+      </ul>
+    </section>
+    <header class="header-c">
+      <div class="search-container">
+        <i class="bx bx-search"></i>
+        <input type="text" name="text" id="" />
+      </div>
+      <div class="user-container">
+        <i class="bx bxs-bell-ring"></i>
+        <img
+          src="https://static.vecteezy.com/system/resources/thumbnails/009/383/461/small/man-face-clipart-design-illustration-free-png.png"
+          width="50"
+          height="50"
+        />
+        <p>Morgan Oakley</p>
+      </div>
+      <div class="title">
+        <img
+          src="https://static.vecteezy.com/system/resources/thumbnails/009/383/461/small/man-face-clipart-design-illustration-free-png.png"
+          width="60"
+          height="60"
+        />
+        <div class="title-text">
+          <h3>hi there,</h3>
+          <h2>morgan Oakley</h2>
+        </div>
+      </div>
+      <div>
+        <ul class="btns">
+          <li><button>New</button></li>
+          <li><button>Update</button></li>
+          <li><button>Share</button></li>
+        </ul>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="main-content">
+        <h1>Your Books</h1>
+        <div class="card-container"></div>
+      </div>
+      <div class="side-content">
+        <div class="announcements">
+          <h1>Announcements</h1>
+          <div class="announcements-container">
+            <div class="news-container">
+              <h2>Site Maintenace</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi,
+                eum ea! Reprehenderit dolor nobis alias in placeat debitis unde
+                dolore.
+              </p>
+            </div>
+            <div class="news-container">
+              <h2>Community Share Day</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa,
+                cupiditate necessitatibus inventore unde placeat laboriosam
+                animi iste ullam harum a.
+              </p>
+            </div>
+            <div class="news-container">
+              <h2>Update Privacy Pollcy</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+                iusto sapiente tempora natus voluptate in vel cupiditate
+                exercitationem, ipsa odit.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="trending">
+          <h1>Trending</h1>
+          <div class="trending-container">
+            <div class="people_container">
+              <img
+                src="https://i.pinimg.com/originals/77/d0/a7/77d0a7c454e658833800528e748edbe9.png"
+                width="50"
+                height="50"
+              />
+              <div class="trending-text-container">
+                <b>@Health</b>
+                <p>Lorem, ipsum.</p>
+              </div>
+            </div>
+            <div class="people_container">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ9Yt_oFZO1qi12EadoxSz_Y5imzIHKemTcA&usqp=CAU"
+                width="50"
+                height="50"
+              />
+              <div class="trending-text-container">
+                <b>@Sad</b>
+                <p>Lorem, ipsum.</p>
+              </div>
+            </div>
+            <div class="people_container">
+              <img
+                src="https://image.pngaaa.com/797/2557797-middle.png"
+                width="50"
+                height="50"
+              />
+              <div class="trending-text-container">
+                <b>@Fun!</b>
+                <p>Lorem, ipsum.</p>
+              </div>
+            </div>
+            <div class="people_container">
+              <img
+                src="https://i.pinimg.com/originals/26/da/36/26da36fa5b621bd90b0a7ec755833ea9.png"
+                width="50"
+                height="50"
+              />
+              <div class="trending-text-container">
+                <b>@Question</b>
+                <p>Lorem, ipsum.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
